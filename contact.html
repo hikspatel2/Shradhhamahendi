@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Book Bridal Mehndi &amp; Nail Art Appointment — Shraddha Artist</title>
+  <meta name="description" content="Book your bridal mehndi or nail art appointment with Shraddha. Call, WhatsApp, or fill the form. Home service available. Quick response guaranteed!"/>
+  <link rel="manifest" href="/static/manifest.json"/>
+  <meta name="theme-color" content="#7A3E1D"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="/static/style.css"/>
+  <style>
+    #scroll-progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,#7A3E1D,#D4A373,#C9A84C);z-index:1100;}
+    .form-success{display:none;text-align:center;padding:2rem;background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.25);border-radius:var(--radius-md);margin-top:1rem;}
+    .form-success i{font-size:2.5rem;color:#10b981;margin-bottom:.8rem;display:block;}
+    .form-success h3{font-family:var(--font-head);color:#065f46;margin-bottom:.4rem;}
+    .form-success p{font-size:.88rem;color:#047857;}
+    .hours-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1rem;margin-top:1.5rem;}
+    .hours-item{background:var(--white);border:1px solid rgba(212,163,115,.18);border-radius:var(--radius-md);padding:1rem;text-align:center;transition:var(--transition);}
+    .hours-item:hover{border-color:var(--secondary);box-shadow:var(--shadow-sm);}
+    .hours-day{font-weight:600;font-size:.88rem;color:var(--primary);margin-bottom:.2rem;}
+    .hours-time{font-size:.8rem;color:var(--text-light);}
+    .hours-item.today{border-color:var(--secondary);background:rgba(212,163,115,.06);}
+    .social-contact-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1.2rem;margin-top:2rem;}
+    .social-contact-card{display:flex;align-items:center;gap:1rem;background:var(--white);border:1px solid rgba(212,163,115,.18);border-radius:var(--radius-md);padding:1.2rem;transition:var(--transition);text-decoration:none;}
+    .social-contact-card:hover{border-color:var(--secondary);box-shadow:var(--shadow-sm);transform:translateY(-2px);}
+    .social-contact-icon{width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.2rem;color:white;flex-shrink:0;}
+    .social-contact-text .name{font-weight:600;font-size:.9rem;color:var(--text);}
+    .social-contact-text .handle{font-size:.78rem;color:var(--text-light);}
+    .availability-badge{display:inline-flex;align-items:center;gap:.4rem;background:rgba(16,185,129,.1);color:#065f46;border:1px solid rgba(16,185,129,.2);border-radius:var(--radius-full);padding:.3rem .9rem;font-size:.75rem;font-weight:600;}
+    .availability-badge::before{content:'';width:7px;height:7px;border-radius:50%;background:#10b981;animation:blink 1.5s ease infinite;}
+    @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+  </style>
+</head>
+<body>
+
+<div id="page-loader">
+  <div class="loader-logo">✦ Shraddha ✦</div>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+</div>
+<div id="scroll-progress"></div>
+
+<nav id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">✦ Shraddha</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="testimonials.html">Reviews</a>
+      <a href="contact.html" class="active nav-cta">Book Now</a>
+    </div>
+    <div class="nav-right">
+      <button class="dark-toggle"><i class="fas fa-moon"></i></button>
+      <button class="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<nav class="mobile-menu">
+  <button class="mobile-close">✕</button>
+  <a href="index.html"><i class="fas fa-home"></i> Home</a>
+  <a href="about.html"><i class="fas fa-user"></i> About</a>
+  <a href="services.html"><i class="fas fa-spa"></i> Services</a>
+  <a href="gallery.html"><i class="fas fa-images"></i> Gallery</a>
+  <a href="pricing.html"><i class="fas fa-tags"></i> Pricing</a>
+  <a href="testimonials.html"><i class="fas fa-star"></i> Reviews</a>
+  <a href="contact.html" style="background:rgba(212,163,115,.15)"><i class="fas fa-calendar-alt"></i> Book Appointment</a>
+</nav>
+<div class="menu-overlay"></div>
+
+<section class="page-hero">
+  <div class="page-hero-content">
+    <h1>Book Your <span>Appointment</span></h1>
+    <p>We'd love to create something beautiful for you</p>
+    <div class="breadcrumb">
+      <a href="index.html">Home</a><i class="fas fa-chevron-right"></i><span>Contact</span>
+    </div>
+  </div>
+</section>
+
+<!-- Quick CTA Buttons -->
+<section style="background:var(--white);padding:2rem 0;">
+  <div class="container">
+    <div style="display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;align-items:center;">
+      <span class="availability-badge">Taking Bookings for 2025</span>
+      <a href="tel:+919876543210" class="btn btn-primary btn-sm"><i class="fas fa-phone"></i> Call Now</a>
+      <a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" class="btn btn-whatsapp btn-sm"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="/cdn-cgi/l/email-protection#80f3e8f2e1e4e4e8e1c0e5f8e1edf0ece5aee3efed" class="btn btn-outline btn-sm"><i class="fas fa-envelope"></i> Email Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- Main Contact Section -->
+<section style="background:var(--bg)">
+  <div class="container">
+    <div class="contact-grid">
+      <!-- Info Card -->
+      <div>
+        <div class="contact-info-card reveal-left">
+          <h3>Get in Touch</h3>
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><i class="fas fa-phone"></i></div>
+            <div class="contact-detail-text">
+              <p>Call / WhatsApp</p>
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-detail-text">
+              <p>Email</p>
+              <a href="/cdn-cgi/l/email-protection#295a415b484d4d4148694c51484459454c074a4644"><span class="__cf_email__" data-cfemail="493a213b282d2d2128092c31282439252c672a2624">[email&#160;protected]</span></a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-detail-text">
+              <p>Studio Location</p>
+              <span>Sector 12, Noida, UP – 201301</span>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><i class="fas fa-clock"></i></div>
+            <div class="contact-detail-text">
+              <p>Working Hours</p>
+              <span>Mon–Sun: 9:00 AM – 8:00 PM</span>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><i class="fas fa-home"></i></div>
+            <div class="contact-detail-text">
+              <p>Home Service</p>
+              <span>Available across Noida & NCR</span>
+            </div>
+          </div>
+          <div class="contact-quick-btns">
+            <a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20book%20a%20Bridal%20Mehndi%20appointment." target="_blank" class="btn btn-whatsapp">
+              <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+            <a href="tel:+919876543210" class="btn btn-primary">
+              <i class="fas fa-phone"></i> Call Now
+            </a>
+          </div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="reveal" style="margin-top:2rem;">
+          <h3 style="font-family:var(--font-head);color:var(--primary);margin-bottom:1rem;">Follow &amp; Connect</h3>
+          <div class="social-contact-grid">
+            <a href="https://instagram.com" target="_blank" class="social-contact-card">
+              <div class="social-contact-icon" style="background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045)"><i class="fab fa-instagram"></i></div>
+              <div class="social-contact-text"><div class="name">Instagram</div><div class="handle">@ShraddhaArtist</div></div>
+            </a>
+            <a href="https://facebook.com" target="_blank" class="social-contact-card">
+              <div class="social-contact-icon" style="background:#1877F2"><i class="fab fa-facebook-f"></i></div>
+              <div class="social-contact-text"><div class="name">Facebook</div><div class="handle">Shraddha Artist</div></div>
+            </a>
+            <a href="https://youtube.com" target="_blank" class="social-contact-card">
+              <div class="social-contact-icon" style="background:#FF0000"><i class="fab fa-youtube"></i></div>
+              <div class="social-contact-text"><div class="name">YouTube</div><div class="handle">Shraddha Designs</div></div>
+            </a>
+            <a href="https://pinterest.com" target="_blank" class="social-contact-card">
+              <div class="social-contact-icon" style="background:#E60023"><i class="fab fa-pinterest-p"></i></div>
+              <div class="social-contact-text"><div class="name">Pinterest</div><div class="handle">Shraddha Mehndi</div></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form-card reveal-right">
+        <h3 style="font-family:var(--font-head);color:var(--primary);font-size:1.5rem;margin-bottom:.4rem;">Book Your Appointment</h3>
+        <p style="font-size:.84rem;color:var(--text-light);margin-bottom:2rem;">Fill in the details below and we'll get back to you within 2 hours!</p>
+
+        <form class="contact-form" id="bookingForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fullName">Full Name *</label>
+              <input type="text" id="fullName" name="fullName" class="form-control" placeholder="Your full name" required/>
+              <div class="field-error" style="display:none;font-size:.75rem;color:#e53e3e;margin-top:.3rem">Please enter your name</div>
+            </div>
+            <div class="form-group">
+              <label for="mobile">Mobile Number *</label>
+              <input type="tel" id="mobile" name="mobile" class="form-control" placeholder="10-digit mobile number" required pattern="[6-9][0-9]{9}"/>
+              <div class="field-error" style="display:none;font-size:.75rem;color:#e53e3e;margin-top:.3rem">Enter valid 10-digit number</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="your@email.com"/>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="service-select">Service Required *</label>
+              <select id="service-select" name="service" class="form-control" required>
+                <option value="">Select a service</option>
+                <optgroup label="Mehndi Services">
+                  <option value="Bridal Mehndi">Bridal Mehndi</option>
+                  <option value="Arabic Mehndi">Arabic Mehndi</option>
+                  <option value="Rajasthani Mehndi">Rajasthani Mehndi</option>
+                  <option value="Engagement Mehndi">Engagement Mehndi</option>
+                  <option value="Festival Mehndi">Festival Mehndi</option>
+                  <option value="Baby Shower Mehndi">Baby Shower Mehndi</option>
+                </optgroup>
+                <optgroup label="Nail Services">
+                  <option value="Nail Art">Nail Art</option>
+                  <option value="Nail Extensions">Nail Extensions</option>
+                  <option value="Gel Polish">Gel Polish</option>
+                  <option value="Nail Care / Manicure">Nail Care / Manicure</option>
+                </optgroup>
+                <option value="Bridal Package (Mehndi + Nails)">Bridal Package (Mehndi + Nails)</option>
+                <option value="Other">Other / Custom Request</option>
+              </select>
+              <div class="field-error" style="display:none;font-size:.75rem;color:#e53e3e;margin-top:.3rem">Please select a service</div>
+            </div>
+            <div class="form-group">
+              <label for="eventDate">Event / Preferred Date *</label>
+              <input type="date" id="eventDate" name="eventDate" class="form-control" required/>
+              <div class="field-error" style="display:none;font-size:.75rem;color:#e53e3e;margin-top:.3rem">Please select a date</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="location">Location</label>
+            <input type="text" id="location" name="location" class="form-control" placeholder="Home service address or 'Studio visit'"/>
+          </div>
+          <div class="form-group">
+            <label for="message">Message / Special Requirements</label>
+            <textarea id="message" name="message" class="form-control" rows="4" placeholder="Tell us about your design preferences, outfit details, event type, or any special requirements..."></textarea>
+          </div>
+          <div style="display:flex;align-items:center;gap:.6rem;margin-bottom:1.4rem;">
+            <input type="checkbox" id="homeService" name="homeService" style="width:auto;accent-color:var(--primary)"/>
+            <label for="homeService" style="font-size:.84rem;color:var(--text);margin:0;font-weight:400">I need home service (+₹200 convenience fee)</label>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:1rem;">
+            <i class="fas fa-paper-plane"></i> Send Booking Request
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-check-circle"></i>
+            <h3>Booking Request Sent! 🎉</h3>
+            <p>Thank you! We'll contact you within 2 hours to confirm your appointment. Feel free to WhatsApp us for faster response!</p>
+          </div>
+          <p style="text-align:center;font-size:.75rem;color:var(--text-light);margin-top:1rem;">
+            <i class="fas fa-lock" style="color:var(--secondary)"></i> Your information is safe and will never be shared.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Working Hours -->
+<section style="background:var(--white)">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag"><i class="fas fa-clock"></i> Hours</span>
+      <h2 class="section-title reveal">Working Hours</h2>
+      <div class="divider"><span class="divider-icon">✦</span></div>
+    </div>
+    <div class="hours-grid reveal">
+      <div class="hours-item"><div class="hours-day">Monday</div><div class="hours-time">9:00 AM – 8:00 PM</div></div>
+      <div class="hours-item"><div class="hours-day">Tuesday</div><div class="hours-time">9:00 AM – 8:00 PM</div></div>
+      <div class="hours-item"><div class="hours-day">Wednesday</div><div class="hours-time">9:00 AM – 8:00 PM</div></div>
+      <div class="hours-item"><div class="hours-day">Thursday</div><div class="hours-time">9:00 AM – 8:00 PM</div></div>
+      <div class="hours-item"><div class="hours-day">Friday</div><div class="hours-time">9:00 AM – 8:00 PM</div></div>
+      <div class="hours-item today"><div class="hours-day">Saturday ✦</div><div class="hours-time">8:00 AM – 9:00 PM</div></div>
+      <div class="hours-item today"><div class="hours-day">Sunday ✦</div><div class="hours-time">8:00 AM – 9:00 PM</div></div>
+    </div>
+    <p style="text-align:center;font-size:.82rem;color:var(--text-light);margin-top:1rem;"><i class="fas fa-info-circle" style="color:var(--secondary)"></i> Extended hours on weekends and during festival seasons. Emergency bookings: call or WhatsApp anytime!</p>
+  </div>
+</section>
+
+<!-- Map -->
+<section style="background:var(--bg)">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag"><i class="fas fa-map-marker-alt"></i> Location</span>
+      <h2 class="section-title reveal">Find Our Studio</h2>
+      <div class="divider"><span class="divider-icon">✦</span></div>
+      <p class="section-subtitle reveal">Visit us at our studio in Noida, or we'll come to you — home service available!</p>
+    </div>
+    <div class="map-embed reveal">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.816698786219!2d77.31140131508177!3d28.563551982447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a68c0b95a1%3A0x6a4bdb02c23a1e38!2sSector%2012%2C%20Noida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Shraddha Mehndi Studio Location"
+        style="width:100%;height:400px;border:0;">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">✦ Shraddha Mehndi &amp; Nail Artist</div>
+        <p>Transforming hands into beautiful art since 2019. Premium bridal mehndi and professional nail art services.</p>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html"><i class="fas fa-chevron-right"></i>Home</a></li><li><a href="about.html"><i class="fas fa-chevron-right"></i>About</a></li><li><a href="services.html"><i class="fas fa-chevron-right"></i>Services</a></li><li><a href="gallery.html"><i class="fas fa-chevron-right"></i>Gallery</a></li><li><a href="pricing.html"><i class="fas fa-chevron-right"></i>Pricing</a></li><li><a href="contact.html"><i class="fas fa-chevron-right"></i>Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Services</h4><ul><li><a href="services.html"><i class="fas fa-chevron-right"></i>Bridal Mehndi</a></li><li><a href="services.html"><i class="fas fa-chevron-right"></i>Arabic Mehndi</a></li><li><a href="services.html"><i class="fas fa-chevron-right"></i>Nail Art</a></li><li><a href="services.html"><i class="fas fa-chevron-right"></i>Nail Extensions</a></li></ul></div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="contact-item"><i class="fas fa-phone"></i><a href="tel:+919876543210" style="color:rgba(244,225,193,.65)">+91 98765 43210</a></div>
+        <div class="contact-item"><i class="fas fa-envelope"></i><a href="/cdn-cgi/l/email-protection#a9dac1dbc8cdcdc1c8e9ccd1c8c4d9c5cc87cac6c4" style="color:rgba(244,225,193,.65)"><span class="__cf_email__" data-cfemail="addec5dfccc9c9c5ccedc8d5ccc0ddc1c883cec2c0">[email&#160;protected]</span></a></div>
+        <div class="contact-item"><i class="fas fa-clock"></i><span>Mon–Sun: 9 AM – 8 PM</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Shraddha Mehndi &amp; Nail Artist. All Rights Reserved.</span>
+      <span>Crafted with <span style="color:var(--secondary)">♥</span> for Beautiful Brides</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" class="whatsapp-float"><i class="fab fa-whatsapp"></i></a>
+<button class="back-top"><i class="fas fa-chevron-up"></i></button>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/static/app.js"></script>
+<script>
+// Enhance form submission
+document.getElementById('bookingForm')?.addEventListener('submit', function(e) {
+  e.preventDefault();
+  let valid = true;
+  this.querySelectorAll('[required]').forEach(field => {
+    if (!field.value.trim()) {
+      valid = false;
+      field.style.borderColor = '#e53e3e';
+      const err = field.parentElement.querySelector('.field-error');
+      if (err) err.style.display = 'block';
+    } else {
+      field.style.borderColor = '';
+      const err = field.parentElement.querySelector('.field-error');
+      if (err) err.style.display = 'none';
+    }
+  });
+  if (valid) {
+    const btn = this.querySelector('[type=submit]');
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+    btn.disabled = true;
+    setTimeout(() => {
+      document.getElementById('formSuccess').style.display = 'block';
+      btn.innerHTML = '<i class="fas fa-check"></i> Sent Successfully!';
+      btn.style.background = 'linear-gradient(135deg,#10b981,#059669)';
+      // Also open WhatsApp with pre-filled message
+      const name    = document.getElementById('fullName').value;
+      const service = document.getElementById('service-select').value;
+      const date    = document.getElementById('eventDate').value;
+      const msg = encodeURIComponent(`Hi Shraddha! 🌸\n\nI'd like to book an appointment.\n\nName: ${name}\nService: ${service}\nDate: ${date}\n\nPlease confirm availability. Thank you!`);
+      setTimeout(() => window.open(`https://wa.me/919876543210?text=${msg}`, '_blank'), 500);
+    }, 1500);
+  }
+});
+// Set min date to today
+const dateInput = document.getElementById('eventDate');
+if (dateInput) {
+  const today = new Date().toISOString().split('T')[0];
+  dateInput.min = today;
+}
+</script>
+</body>
+</html>

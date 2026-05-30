@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pricing | Mehndi &amp; Nail Art Packages — Shraddha Artist</title>
+  <meta name="description" content="Transparent, affordable pricing for Bridal Mehndi, Arabic Mehndi, Nail Art, Nail Extensions and more. Starting from ₹300. Book your appointment today!"/>
+  <link rel="manifest" href="/static/manifest.json"/>
+  <meta name="theme-color" content="#7A3E1D"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="/static/style.css"/>
+  <style>
+    #scroll-progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,#7A3E1D,#D4A373,#C9A84C);z-index:1100;}
+    .pricing-section-title{font-family:var(--font-head);font-size:1.5rem;font-weight:700;color:var(--primary);margin:3rem 0 1.5rem;display:flex;align-items:center;gap:.7rem;}
+    .pricing-section-title::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,rgba(212,163,115,.5),transparent);}
+    .add-on-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1.2rem;margin-top:1.5rem;}
+    .add-on-card{background:var(--white);border:1px solid rgba(212,163,115,.18);border-radius:var(--radius-md);padding:1.2rem;display:flex;align-items:center;justify-content:space-between;transition:var(--transition);}
+    .add-on-card:hover{border-color:var(--secondary);box-shadow:var(--shadow-sm);transform:translateY(-2px);}
+    .add-on-name{font-size:.88rem;font-weight:500;color:var(--text);}
+    .add-on-price{font-family:var(--font-head);font-size:1rem;font-weight:700;color:var(--primary);}
+    .faq-item{background:var(--white);border:1px solid rgba(212,163,115,.18);border-radius:var(--radius-md);overflow:hidden;margin-bottom:1rem;transition:var(--transition);}
+    .faq-item:hover{border-color:var(--secondary);}
+    .faq-q{display:flex;justify-content:space-between;align-items:center;padding:1.2rem 1.5rem;cursor:pointer;font-weight:500;color:var(--text);}
+    .faq-q i{color:var(--primary);transition:var(--transition);flex-shrink:0;}
+    .faq-a{padding:0 1.5rem;max-height:0;overflow:hidden;transition:max-height .4s ease,padding .4s;}
+    .faq-a.open{max-height:200px;padding:0 1.5rem 1.2rem;}
+    .faq-a p{font-size:.88rem;color:var(--text-light);line-height:1.8;}
+    .faq-item.open .faq-q i{transform:rotate(180deg);}
+    .pricing-note{background:linear-gradient(135deg,rgba(122,62,29,.05),rgba(212,163,115,.1));border:1px solid rgba(212,163,115,.25);border-radius:var(--radius-md);padding:1.5rem;margin-top:2rem;}
+    .pricing-note h4{font-family:var(--font-head);color:var(--primary);margin-bottom:.6rem;}
+    .pricing-note ul li{font-size:.84rem;color:var(--text-light);padding:.3rem 0;display:flex;align-items:center;gap:.5rem;}
+    .pricing-note ul li i{color:var(--secondary);}
+  </style>
+</head>
+<body>
+
+<div id="page-loader">
+  <div class="loader-logo">✦ Shraddha ✦</div>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+</div>
+<div id="scroll-progress"></div>
+
+<nav id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">✦ Shraddha</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="pricing.html" class="active">Pricing</a>
+      <a href="testimonials.html">Reviews</a>
+      <a href="contact.html" class="nav-cta">Book Now</a>
+    </div>
+    <div class="nav-right">
+      <button class="dark-toggle"><i class="fas fa-moon"></i></button>
+      <button class="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<nav class="mobile-menu">
+  <button class="mobile-close">✕</button>
+  <a href="index.html"><i class="fas fa-home"></i> Home</a>
+  <a href="about.html"><i class="fas fa-user"></i> About</a>
+  <a href="services.html"><i class="fas fa-spa"></i> Services</a>
+  <a href="gallery.html"><i class="fas fa-images"></i> Gallery</a>
+  <a href="pricing.html"><i class="fas fa-tags"></i> Pricing</a>
+  <a href="testimonials.html"><i class="fas fa-star"></i> Reviews</a>
+  <a href="contact.html" style="background:rgba(212,163,115,.15)"><i class="fas fa-calendar-alt"></i> Book Appointment</a>
+</nav>
+<div class="menu-overlay"></div>
+
+<section class="page-hero">
+  <div class="page-hero-content">
+    <h1>Our <span>Pricing</span></h1>
+    <p>Transparent, affordable packages for every occasion</p>
+    <div class="breadcrumb">
+      <a href="index.html">Home</a><i class="fas fa-chevron-right"></i><span>Pricing</span>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--bg)">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag"><i class="fas fa-tags"></i> Our Packages</span>
+      <h2 class="section-title reveal">Luxury at Every Price Point</h2>
+      <div class="divider"><span class="divider-icon">✦</span></div>
+      <p class="section-subtitle reveal">Premium quality services at honest prices — no hidden charges, no surprises. Final price depends on design complexity and coverage.</p>
+    </div>
+
+    <!-- Mehndi Pricing -->
+    <div class="pricing-section-title reveal"><i class="fas fa-leaf" style="color:var(--secondary)"></i>Mehndi Packages</div>
+    <div class="pricing-grid">
+      <!-- Festival -->
+      <div class="pricing-card reveal card-glow">
+        <div class="pricing-icon">🌸</div>
+        <div class="pricing-name">Festival Mehndi</div>
+        <div class="pricing-starting">Starting from</div>
+        <div class="pricing-price"><sup>₹</sup>300</div>
+        <ul class="pricing-features">
+          <li><i class="fas fa-check"></i>Front hand design</li>
+          <li><i class="fas fa-check"></i>Arabic or Indian style</li>
+          <li><i class="fas fa-check"></i>15–30 min session</li>
+          <li><i class="fas fa-check"></i>Natural henna cone</li>
+          <li><i class="fas fa-times" style="color:#ddd"></i><span style="color:#bbb">Feet design</span></li>
+          <li><i class="fas fa-times" style="color:#ddd"></i><span style="color:#bbb">Custom design</span></li>
+        </ul>
+        <a href="contact.html" class="btn btn-outline" style="width:100%;justify-content:center;">Book Now</a>
+      </div>
+      <!-- Arabic -->
+      <div class="pricing-card reveal card-glow">
+        <div class="pricing-icon">✨</div>
+        <div class="pricing-name">Arabic Mehndi</div>
+        <div class="pricing-starting">Starting from</div>
+        <div class="pricing-price"><sup>₹</sup>800</div>
+        <ul class="pricing-features">
+          <li><i class="fas fa-check"></i>Full front hand design</li>
+          <li><i class="fas fa-check"></i>Modern Arabic patterns</li>
+          <li><i class="fas fa-check"></i>30–60 min session</li>
+          <li><i class="fas fa-check"></i>Premium dark henna</li>
+          <li><i class="fas fa-check"></i>Back hand optional</li>
+          <li><i class="fas fa-times" style="color:#ddd"></i><span style="color:#bbb">Feet coverage</span></li>
+        </ul>
+        <a href="contact.html" class="btn btn-outline" style="width:100%;justify-content:center;">Book Now</a>
+      </div>
+      <!-- Engagement -->
+      <div class="pricing-card reveal card-glow">
+        <div class="pricing-icon">💍</div>
+        <div class="pricing-name">Engagement Mehndi</div>
+        <div class="pricing-starting">Starting from</div>
+        <div class="pricing-price"><sup>₹</sup>1,200</div>
+        <ul class="pricing-features">
+          <li><i class="fas fa-check"></i>Full hands coverage</li>
+          <li><i class="fas fa-check"></i>Couple & floral motifs</li>
+          <li><i class="fas fa-check"></i>1–2 hours session</li>
+          <li><i class="fas fa-check"></i>Design consultation</li>
+          <li><i class="fas fa-check"></i>Touch-up included</li>
+          <li><i class="fas fa-times" style="color:#ddd"></i><span style="color:#bbb">Feet design</span></li>
+        </ul>
+        <a href="contact.html" class="btn btn-outline" style="width:100%;justify-content:center;">Book Now</a>
+      </div>
+      <!-- Rajasthani -->
+      <div class="pricing-card reveal card-glow">
+        <div class="pricing-icon">🏰</div>
+        <div class="pricing-name">Rajasthani Mehndi</div>
+        <div class="pricing-starting">Starting from</div>
+        <div class="pricing-price"><sup>₹</sup>1,500</div>
+        <ul class="pricing-features">
+          <li><i class="fas fa-check"></i>Full arms + hands</li>
+          <li><i class="fas fa-check"></i>Peacock & paisley motifs</li>
+          <li><i class="fas fa-check"></i>2–4 hours session</li>
+          <li><i class="fas fa-check"></i>Dense intricate patterns</li>
+          <li><i class="fas fa-check"></i>Design consultation</li>
+          <li><i class="fas fa-check"></i>Touch-up included</li>
+        </ul>
+        <a href="contact.html" class="btn btn-outline" style="width:100%;justify-content:center;">Book Now</a>
+      </div>
+      <!-- Bridal Standard -->
+      <div class="pricing-card popular reveal card-glow">
+        <div class="popular-badge">⭐ Popular</div>
+        <div class="pricing-icon">👰</div>
+        <div class="pricing-name">Bridal Mehndi</div>
+        <div class="pricing-starting">Starting from</div>
+        <div class="pricing-price"><sup>₹</sup>3,500</div>
+        <ul class="pricing-features">
+          <li><i class="fas fa-check"></i>Full hands + feet</li>
+          <li><i class="fas fa-check"></i>Custom bridal design</li>
+          <li><i class="fas fa-check"></i>3–5 hours session</li>
+          <li><i class="fas fa-check"></i>Hidden groom's name</li>
+          <li><i class="fas fa-check"></i>Personal motifs</li>
+          <li><i class="fas fa-check"></i>Home service available</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;"><i class="fas fa-calendar-check"></i> Book Now</a>
+      </div>
+      <!-- Bridal Premium -->
+      <div class="pricing-card reveal card-glow">
+        <div class="pricing-icon">👑</div>
+        <div class="pricing-name">Royal Bridal Package</div>
+        <div class="pricing-starting">Starting from</div>
+        <div class="pricing-price"><sup>₹</sup>6,000</div>
+        <ul class="pricing-features">
+          <li><i class="fas fa-check"></i>Full hands, arms + feet</li>
+          <li><i class="fas fa-check"></i>Rajasthani + Arabic fusion</li>
+          <li><i class="fas fa-check"></i>5–7 hours session</li>
+          <li><i class="fas fa-check"></i>Multiple custom motifs</li>
+          <li><i class="fas fa-check"></i>Free home service</li>
+          <li><i class="fas fa-check"></i>Includes nail art (2 nails)</li>
+        </ul>
+        <a href="contact.html" class="btn btn-gold" style="width:100%;justify-content:center;">Book Royal Package</a>
+      </div>
+    </div>
+
+    <!-- Nail Pricing -->
+    <div class="pricing-section-title reveal"><i class="fas fa-hand-sparkles" style="color:var(--secondary)"></i>Nail Art Packages</div>
+    <div class="pricing-grid">
+      <div class="pricing-card reveal card-glow">
+        <div class="pricing-icon">💅</div>
+        <div class="pricing-name">Basic Nail Art</div>
+        <div class="pricing-starting">Starting from</div>
+        <div class="pricing-price"><sup>₹</sup>500</div>
+        <ul class="pricing-features">
+          <li><i class="fas fa-check"></i>Simple designs</li>
+          <li><i class="fas fa-check"></i>1–2 color work</li>
+          <li><i class="fas fa-check"></i>Regular polish</li>
+          <li><i class="fas fa-check"></i>30–45 min session</li>
+        </ul>
+        <a href="contact.html" class="btn btn-outline" style="width:100%;justify-content:center;">Book Now</a>
+      </div>
+      <div class="pricing-card reveal card-glow">
+        <div class="pricing-icon">🌟</div>
+        <div class="pricing-name">Gel Nail Art</div>
+        <div class="pricing-starting">Starting from</div>
+        <div class="pricing-price"><sup>₹</sup>800</div>
+        <ul class="pricing-features">
+          <li><i class="fas fa-check"></i>Gel polish finish</li>
+          <li><i class="fas fa-check"></i>Lasts 2–3 weeks</li>
+          <li><i class="fas fa-check"></i>200+ color options</li>
+          <li><i class="fas fa-check"></i>High gloss finish</li>
+        </ul>
+        <a href="contact.html" class="btn btn-outline" style="width:100%;justify-content:center;">Book Now</a>
+      </div>
+      <div class="pricing-card popular reveal card-glow">
+        <div class="popular-badge">⭐ Popular</div>
+        <div class="pricing-icon">✨</div>
+        <div class="pricing-name">Premium Nail Art</div>
+        <div class="pricing-starting">Starting from</div>
+        <div class="pricing-price"><sup>₹</sup>1,200</div>
+        <ul class="pricing-features">
+          <li><i class="fas fa-check"></i>Intricate designs</li>
+          <li><i class="fas fa-check"></i>3D elements & gems</li>
+          <li><i class="fas fa-check"></i>Chrome & foil effects</li>
+          <li><i class="fas fa-check"></i>Gel polish base</li>
+          <li><i class="fas fa-check"></i>Lasts 3–4 weeks</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;"><i class="fas fa-calendar-check"></i> Book Now</a>
+      </div>
+      <div class="pricing-card reveal card-glow">
+        <div class="pricing-icon">💎</div>
+        <div class="pricing-name">Nail Extensions</div>
+        <div class="pricing-starting">Starting from</div>
+        <div class="pricing-price"><sup>₹</sup>1,800</div>
+        <ul class="pricing-features">
+          <li><i class="fas fa-check"></i>Acrylic/gel extension</li>
+          <li><i class="fas fa-check"></i>Your choice of shape</li>
+          <li><i class="fas fa-check"></i>Art design included</li>
+          <li><i class="fas fa-check"></i>Lasts 3–4 weeks</li>
+          <li><i class="fas fa-check"></i>Free infill guide</li>
+        </ul>
+        <a href="contact.html" class="btn btn-outline" style="width:100%;justify-content:center;">Book Now</a>
+      </div>
+    </div>
+
+    <!-- Add-ons -->
+    <div class="pricing-section-title reveal"><i class="fas fa-plus-circle" style="color:var(--secondary)"></i>Add-On Services</div>
+    <div class="add-on-grid reveal">
+      <div class="add-on-card"><span class="add-on-name">Henna Aftercare Kit</span><span class="add-on-price">₹150</span></div>
+      <div class="add-on-card"><span class="add-on-name">Feet Design Add-on</span><span class="add-on-price">₹500+</span></div>
+      <div class="add-on-card"><span class="add-on-name">Home Service Visit</span><span class="add-on-price">₹200</span></div>
+      <div class="add-on-card"><span class="add-on-name">Rush Booking (24h)</span><span class="add-on-price">₹300</span></div>
+      <div class="add-on-card"><span class="add-on-name">Nail Removal Service</span><span class="add-on-price">₹200</span></div>
+      <div class="add-on-card"><span class="add-on-name">Nail Repair (per nail)</span><span class="add-on-price">₹100</span></div>
+    </div>
+
+    <div class="pricing-note reveal">
+      <h4><i class="fas fa-info-circle" style="color:var(--secondary);margin-right:.4rem"></i>Pricing Notes</h4>
+      <ul>
+        <li><i class="fas fa-check-circle"></i>All prices are starting prices — final cost depends on design complexity</li>
+        <li><i class="fas fa-check-circle"></i>Home service available with ₹200 additional convenience fee</li>
+        <li><i class="fas fa-check-circle"></i>Bridal bookings require 30% advance to confirm the slot</li>
+        <li><i class="fas fa-check-circle"></i>Group bookings (5+ people) get 10% discount</li>
+        <li><i class="fas fa-check-circle"></i>All prices inclusive of premium natural henna and quality nail products</li>
+      </ul>
+    </div>
+
+    <!-- FAQ -->
+    <div class="section-header" style="margin-top:4rem;">
+      <span class="section-tag"><i class="fas fa-question-circle"></i> FAQ</span>
+      <h2 class="section-title reveal">Frequently Asked Questions</h2>
+      <div class="divider"><span class="divider-icon">✦</span></div>
+    </div>
+    <div style="max-width:750px;margin:0 auto;" class="reveal">
+      <div class="faq-item">
+        <div class="faq-q">How far in advance should I book bridal mehndi? <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-a"><p>We recommend booking bridal mehndi at least 2–4 weeks in advance, especially during the wedding season (November–February). For peak dates, booking 2–3 months ahead is ideal to secure your preferred slot.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Do you provide home service? <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-a"><p>Yes! We offer home service across the city with a small convenience fee of ₹200. Just mention your location while booking and we'll confirm availability.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Is your henna safe for sensitive skin? <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-a"><p>Absolutely. We use 100% natural, chemical-free henna made from pure henna leaves. No black henna, no PPD, no harmful additives — completely safe for all skin types including sensitive skin.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How long does mehndi color last? <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-a"><p>With proper aftercare (keeping it on for 6–8 hours, using sugar-lemon solution), mehndi typically stays for 1–3 weeks depending on your skin type, lifestyle, and care. Bridal mehndi with rich natural henna tends to stain darker and last longer.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How long do nail extensions last? <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-a"><p>Nail extensions typically last 3–4 weeks with proper care. We recommend an infill appointment every 2–3 weeks to maintain the look and keep your natural nails healthy.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can I customize my design? <i class="fas fa-chevron-down"></i></div>
+        <div class="faq-a"><p>Absolutely! Every design is customized to your preferences. Share your references, outfit details, and ideas — we'll create a unique design just for you. For bridal clients, we offer a free pre-wedding design consultation.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="booking-cta">
+  <div class="container" style="position:relative;z-index:1;text-align:center;">
+    <h2 class="cta-title reveal">Invest in Beauty That <span>Lasts a Lifetime</span></h2>
+    <p class="cta-sub reveal">Book your appointment today and let us create something extraordinary for you.</p>
+    <div class="cta-buttons reveal">
+      <a href="contact.html" class="btn btn-gold btn-lg"><i class="fas fa-calendar-check"></i> Book Appointment</a>
+      <a href="https://wa.me/919876543210" target="_blank" class="btn btn-whatsapp btn-lg"><i class="fab fa-whatsapp"></i> Get Custom Quote</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">✦ Shraddha Mehndi &amp; Nail Artist</div>
+        <p>Transforming hands into beautiful art since 2019.</p>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html"><i class="fas fa-chevron-right"></i>Home</a></li>
+          <li><a href="about.html"><i class="fas fa-chevron-right"></i>About</a></li>
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i>Services</a></li>
+          <li><a href="gallery.html"><i class="fas fa-chevron-right"></i>Gallery</a></li>
+          <li><a href="pricing.html"><i class="fas fa-chevron-right"></i>Pricing</a></li>
+          <li><a href="contact.html"><i class="fas fa-chevron-right"></i>Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col"><h4>Services</h4><ul><li><a href="services.html"><i class="fas fa-chevron-right"></i>Bridal Mehndi</a></li><li><a href="services.html"><i class="fas fa-chevron-right"></i>Arabic Mehndi</a></li><li><a href="services.html"><i class="fas fa-chevron-right"></i>Nail Art</a></li><li><a href="services.html"><i class="fas fa-chevron-right"></i>Nail Extensions</a></li></ul></div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="contact-item"><i class="fas fa-phone"></i><a href="tel:+919876543210" style="color:rgba(244,225,193,.65)">+91 98765 43210</a></div>
+        <div class="contact-item"><i class="fas fa-envelope"></i><a href="/cdn-cgi/l/email-protection#a9dac1dbc8cdcdc1c8e9ccd1c8c4d9c5cc87cac6c4" style="color:rgba(244,225,193,.65)"><span class="__cf_email__" data-cfemail="2f5c475d4e4b4b474e6f4a574e425f434a014c4042">[email&#160;protected]</span></a></div>
+        <div class="contact-item"><i class="fas fa-clock"></i><span>Mon–Sun: 9 AM – 8 PM</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Shraddha Mehndi &amp; Nail Artist. All Rights Reserved.</span>
+      <span>Crafted with <span style="color:var(--secondary)">♥</span> for Beautiful Brides</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/919876543210" target="_blank" class="whatsapp-float"><i class="fab fa-whatsapp"></i></a>
+<button class="back-top"><i class="fas fa-chevron-up"></i></button>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/static/app.js"></script>
+<script>
+document.querySelectorAll('.faq-q').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => { i.classList.remove('open'); i.querySelector('.faq-a').classList.remove('open'); });
+    if (!isOpen) { item.classList.add('open'); item.querySelector('.faq-a').classList.add('open'); }
+  });
+});
+</script>
+</body>
+</html>

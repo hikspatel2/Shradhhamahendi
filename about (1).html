@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Shraddha | Bridal Mehndi & Nail Artist — Her Story & Journey</title>
+  <meta name="description" content="Meet Shraddha — a passionate Bridal Mehndi Artist and Nail Art Specialist with 5+ years of experience. Discover her story, achievements, and artistic journey."/>
+  <meta property="og:title" content="About Shraddha | Mehndi & Nail Artist"/>
+  <meta property="og:type" content="website"/>
+  <link rel="manifest" href="/static/manifest.json"/>
+  <meta name="theme-color" content="#7A3E1D"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="/static/style.css"/>
+  <style>
+    #scroll-progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,#7A3E1D,#D4A373,#C9A84C);z-index:1100;}
+    .skill-bar-wrap{margin-bottom:1.2rem;}
+    .skill-label{display:flex;justify-content:space-between;font-size:.84rem;color:var(--text);margin-bottom:.4rem;font-weight:500;}
+    .skill-bar{height:8px;background:rgba(212,163,115,.2);border-radius:50px;overflow:hidden;}
+    .skill-bar-fill{height:100%;border-radius:50px;background:linear-gradient(90deg,var(--primary),var(--secondary));width:0;transition:width 1.2s cubic-bezier(.4,0,.2,1);}
+    .mission-vision{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:2rem;}
+    .mv-card{background:var(--white);border:1px solid rgba(212,163,115,.2);border-radius:var(--radius-lg);padding:2rem;border-top:4px solid var(--primary);}
+    .mv-card h3{font-family:var(--font-head);font-size:1.2rem;color:var(--primary);margin-bottom:.8rem;}
+    .trust-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1.5rem;}
+    .trust-item{text-align:center;padding:1.5rem;background:var(--white);border:1px solid rgba(212,163,115,.15);border-radius:var(--radius-md);transition:var(--transition);}
+    .trust-item:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);border-color:var(--secondary);}
+    .trust-icon{font-size:1.8rem;color:var(--secondary);margin-bottom:.6rem;}
+    .trust-title{font-family:var(--font-head);font-size:.9rem;font-weight:600;color:var(--primary);}
+    .trust-desc{font-size:.78rem;color:var(--text-light);margin-top:.3rem;}
+    @media(max-width:640px){.mission-vision{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+
+<div id="page-loader">
+  <div class="loader-logo">✦ Shraddha ✦</div>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+</div>
+<div id="scroll-progress"></div>
+
+<nav id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">✦ Shraddha</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="testimonials.html">Reviews</a>
+      <a href="contact.html" class="nav-cta">Book Now</a>
+    </div>
+    <div class="nav-right">
+      <button class="dark-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<nav class="mobile-menu">
+  <button class="mobile-close">✕</button>
+  <a href="index.html"><i class="fas fa-home"></i> Home</a>
+  <a href="about.html"><i class="fas fa-user"></i> About</a>
+  <a href="services.html"><i class="fas fa-spa"></i> Services</a>
+  <a href="gallery.html"><i class="fas fa-images"></i> Gallery</a>
+  <a href="pricing.html"><i class="fas fa-tags"></i> Pricing</a>
+  <a href="testimonials.html"><i class="fas fa-star"></i> Reviews</a>
+  <a href="contact.html" style="background:rgba(212,163,115,.15)"><i class="fas fa-calendar-alt"></i> Book Appointment</a>
+</nav>
+<div class="menu-overlay"></div>
+
+<!-- Page Hero -->
+<section class="page-hero">
+  <div class="page-hero-content">
+    <h1>About <span>Shraddha</span></h1>
+    <p>Her story, her passion, her artistry</p>
+    <div class="breadcrumb">
+      <a href="index.html">Home</a><i class="fas fa-chevron-right"></i><span>About</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── ARTIST STORY ── -->
+<section style="background:var(--bg)">
+  <div class="container">
+    <div class="about-story">
+      <div class="reveal-left">
+        <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=600&q=85&auto=format&fit=crop" alt="Shraddha — Mehndi Artist" class="about-story-img"/>
+      </div>
+      <div class="reveal-right">
+        <span class="section-tag"><i class="fas fa-feather-alt"></i> My Story</span>
+        <h2 class="section-title">A Passion That Became a Profession</h2>
+        <div class="divider" style="justify-content:flex-start;margin:1rem 0 1.5rem">
+          <span style="color:var(--secondary)">✦ ✦ ✦</span>
+        </div>
+        <p style="color:var(--text-light);line-height:1.9;margin-bottom:1rem;">
+          My journey with mehndi began as a child, watching my grandmother apply beautiful henna patterns during festivals. What started as a childhood fascination evolved into a deep artistic calling. By age 16, I was the go-to mehndi artist for every neighbourhood wedding and celebration.
+        </p>
+        <p style="color:var(--text-light);line-height:1.9;margin-bottom:1rem;">
+          After completing my formal training in multiple mehndi styles and nail art techniques, I founded <strong style="color:var(--primary)">Shraddha Mehndi &amp; Nail Artist</strong> in 2019 — with a vision to bring world-class artistry to every bride and beauty lover.
+        </p>
+        <p style="color:var(--text-light);line-height:1.9;margin-bottom:2rem;">
+          Today, with 500+ happy clients and 100+ bridal assignments, I continue to pour my heart into every stroke of henna and every nail design, creating memories that brides and clients cherish forever.
+        </p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:2rem;">
+          <div style="background:var(--white);border:1px solid rgba(212,163,115,.2);border-radius:var(--radius-md);padding:1.2rem;text-align:center;">
+            <div style="font-family:var(--font-head);font-size:2rem;font-weight:700;color:var(--primary)">500+</div>
+            <div style="font-size:.78rem;color:var(--text-light)">Happy Clients</div>
+          </div>
+          <div style="background:var(--white);border:1px solid rgba(212,163,115,.2);border-radius:var(--radius-md);padding:1.2rem;text-align:center;">
+            <div style="font-family:var(--font-head);font-size:2rem;font-weight:700;color:var(--primary)">100+</div>
+            <div style="font-size:.78rem;color:var(--text-light)">Bridal Designs</div>
+          </div>
+        </div>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+          <a href="contact.html" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Book Appointment</a>
+          <a href="gallery.html" class="btn btn-outline"><i class="fas fa-images"></i> See My Work</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SKILLS ── -->
+<section style="background:linear-gradient(160deg,rgba(244,225,193,.3) 0%,var(--bg) 100%)">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center">
+      <div class="reveal-left">
+        <span class="section-tag"><i class="fas fa-chart-bar"></i> Expertise</span>
+        <h2 class="section-title">Skills &amp; Specializations</h2>
+        <div class="divider" style="justify-content:flex-start;margin:1rem 0 1.5rem"><span style="color:var(--secondary)">✦ ✦ ✦</span></div>
+        <p style="color:var(--text-light);line-height:1.9;margin-bottom:2rem;">Continuously honing her craft through training, practice, and creative exploration across multiple styles and techniques.</p>
+        <div class="skill-bar-wrap">
+          <div class="skill-label"><span>Bridal Mehndi</span><span>98%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="98"></div></div>
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-label"><span>Arabic Mehndi</span><span>95%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="95"></div></div>
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-label"><span>Rajasthani Mehndi</span><span>92%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="92"></div></div>
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-label"><span>Nail Art</span><span>96%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="96"></div></div>
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-label"><span>Nail Extensions</span><span>90%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-label"><span>Gel Polish Art</span><span>94%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="94"></div></div>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <span class="section-tag"><i class="fas fa-history"></i> Journey</span>
+        <h2 class="section-title">My Professional Timeline</h2>
+        <div class="divider" style="justify-content:flex-start;margin:1rem 0 1.5rem"><span style="color:var(--secondary)">✦ ✦ ✦</span></div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">2018</div>
+            <div class="timeline-title">Formal Mehndi Training</div>
+            <div class="timeline-desc">Completed advanced training in Bridal, Arabic and Rajasthani mehndi styles from a renowned institute in Delhi.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2019</div>
+            <div class="timeline-title">Founded Shraddha Artist</div>
+            <div class="timeline-desc">Officially launched as a professional mehndi artist, serving first 50 clients in the local area.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2020</div>
+            <div class="timeline-title">Nail Art Certification</div>
+            <div class="timeline-desc">Completed professional nail art and nail extension certification, expanding services significantly.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2022</div>
+            <div class="timeline-title">100+ Bridal Clients</div>
+            <div class="timeline-desc">Achieved the milestone of 100+ bridal assignments with 5-star ratings across platforms.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2024</div>
+            <div class="timeline-title">500+ Happy Clients</div>
+            <div class="timeline-desc">Celebrated 500+ satisfied clients and launched premium home service packages city-wide.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2025</div>
+            <div class="timeline-title">Expanding the Dream</div>
+            <div class="timeline-desc">Continuing to grow with new designs, advanced training, and a dedicated online presence.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── ACHIEVEMENTS ── -->
+<section style="background:var(--white)">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag"><i class="fas fa-trophy"></i> Achievements</span>
+      <h2 class="section-title reveal">Awards &amp; Recognition</h2>
+      <div class="divider"><span class="divider-icon">✦</span></div>
+      <p class="section-subtitle reveal">Every award is a testament to the trust and love of our clients.</p>
+    </div>
+    <div class="achievements-grid">
+      <div class="achievement-card reveal">
+        <div class="achievement-icon"><i class="fas fa-trophy" style="color:#C9A84C"></i></div>
+        <div class="achievement-title">Best Bridal Artist</div>
+        <div class="achievement-year">Local Wedding Awards 2023</div>
+      </div>
+      <div class="achievement-card reveal">
+        <div class="achievement-icon"><i class="fas fa-medal" style="color:#C9A84C"></i></div>
+        <div class="achievement-title">Top Rated on Google</div>
+        <div class="achievement-year">4.9★ — 200+ Reviews</div>
+      </div>
+      <div class="achievement-card reveal">
+        <div class="achievement-icon"><i class="fas fa-certificate" style="color:#C9A84C"></i></div>
+        <div class="achievement-title">Certified Nail Tech</div>
+        <div class="achievement-year">CIDESCO Certified 2020</div>
+      </div>
+      <div class="achievement-card reveal">
+        <div class="achievement-icon"><i class="fas fa-star" style="color:#C9A84C"></i></div>
+        <div class="achievement-title">Featured Artist</div>
+        <div class="achievement-year">WeddingWire 2022–24</div>
+      </div>
+      <div class="achievement-card reveal">
+        <div class="achievement-icon"><i class="fas fa-heart" style="color:var(--rose)"></i></div>
+        <div class="achievement-title">500+ Happy Brides</div>
+        <div class="achievement-year">Milestone 2024</div>
+      </div>
+      <div class="achievement-card reveal">
+        <div class="achievement-icon"><i class="fas fa-paint-brush" style="color:var(--primary)"></i></div>
+        <div class="achievement-title">Master Mehndi Artist</div>
+        <div class="achievement-year">Advanced Certification 2021</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── MISSION & VISION ── -->
+<section style="background:var(--bg)">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag"><i class="fas fa-bullseye"></i> Purpose</span>
+      <h2 class="section-title reveal">Mission &amp; Vision</h2>
+      <div class="divider"><span class="divider-icon">✦</span></div>
+    </div>
+    <div class="mission-vision reveal">
+      <div class="mv-card">
+        <h3><i class="fas fa-bullseye" style="color:var(--secondary);margin-right:.5rem"></i>Our Mission</h3>
+        <p style="font-size:.88rem;color:var(--text-light);line-height:1.9;">
+          To deliver world-class mehndi artistry and nail services that celebrate the beauty of every individual. We are committed to creating unique, personalized designs using premium, safe products — making every client feel like royalty on their special day and every day.
+        </p>
+      </div>
+      <div class="mv-card" style="border-top-color:var(--secondary)">
+        <h3><i class="fas fa-eye" style="color:var(--secondary);margin-right:.5rem"></i>Our Vision</h3>
+        <p style="font-size:.88rem;color:var(--text-light);line-height:1.9;">
+          To be the most trusted and celebrated beauty artist brand in India — known for artistic excellence, client satisfaction, and innovative designs. We envision a future where every bride's mehndi and nail story is told through our craft, reaching hearts across the nation.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── WHY TRUST US ── -->
+<section style="background:linear-gradient(160deg,rgba(244,225,193,.25) 0%,var(--bg) 100%)">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag"><i class="fas fa-shield-alt"></i> Trust</span>
+      <h2 class="section-title reveal">Why Clients Trust Shraddha</h2>
+      <div class="divider"><span class="divider-icon">✦</span></div>
+      <p class="section-subtitle reveal">Our reputation is built on consistency, quality, and genuine care for every client.</p>
+    </div>
+    <div class="trust-grid">
+      <div class="trust-item reveal">
+        <div class="trust-icon"><i class="fas fa-leaf"></i></div>
+        <div class="trust-title">100% Natural Henna</div>
+        <div class="trust-desc">Pure organic henna — no chemicals, no allergies.</div>
+      </div>
+      <div class="trust-item reveal">
+        <div class="trust-icon"><i class="fas fa-clock"></i></div>
+        <div class="trust-title">Always On Time</div>
+        <div class="trust-desc">Punctual for every appointment — your time is precious.</div>
+      </div>
+      <div class="trust-item reveal">
+        <div class="trust-icon"><i class="fas fa-phone-alt"></i></div>
+        <div class="trust-title">24/7 Support</div>
+        <div class="trust-desc">Always available on WhatsApp for queries and support.</div>
+      </div>
+      <div class="trust-item reveal">
+        <div class="trust-icon"><i class="fas fa-undo-alt"></i></div>
+        <div class="trust-title">Satisfaction Guaranteed</div>
+        <div class="trust-desc">Not happy? We'll fix it — your satisfaction is our priority.</div>
+      </div>
+      <div class="trust-item reveal">
+        <div class="trust-icon"><i class="fas fa-home"></i></div>
+        <div class="trust-title">Home Service</div>
+        <div class="trust-desc">Professional studio service at the comfort of your home.</div>
+      </div>
+      <div class="trust-item reveal">
+        <div class="trust-icon"><i class="fas fa-star"></i></div>
+        <div class="trust-title">5-Star Rated</div>
+        <div class="trust-desc">Consistent 4.9★ rating across all platforms.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="booking-cta">
+  <div class="container" style="position:relative;z-index:1;text-align:center;">
+    <h2 class="cta-title reveal">Let's Create Something <span>Beautiful Together</span></h2>
+    <p class="cta-sub reveal">Book your session with Shraddha and experience the magic of true artistry.</p>
+    <div class="cta-buttons reveal">
+      <a href="contact.html" class="btn btn-gold btn-lg"><i class="fas fa-calendar-check"></i> Book Appointment</a>
+      <a href="https://wa.me/919876543210" target="_blank" class="btn btn-whatsapp btn-lg"><i class="fab fa-whatsapp"></i> WhatsApp Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">✦ Shraddha Mehndi &amp; Nail Artist</div>
+        <p>Transforming hands into beautiful art since 2019. Premium bridal mehndi and professional nail art services.</p>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html"><i class="fas fa-chevron-right"></i>Home</a></li>
+          <li><a href="about.html"><i class="fas fa-chevron-right"></i>About Us</a></li>
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i>Services</a></li>
+          <li><a href="gallery.html"><i class="fas fa-chevron-right"></i>Gallery</a></li>
+          <li><a href="pricing.html"><i class="fas fa-chevron-right"></i>Pricing</a></li>
+          <li><a href="contact.html"><i class="fas fa-chevron-right"></i>Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i>Bridal Mehndi</a></li>
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i>Arabic Mehndi</a></li>
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i>Nail Art</a></li>
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i>Nail Extensions</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="contact-item"><i class="fas fa-phone"></i><a href="tel:+919876543210" style="color:rgba(244,225,193,.65)">+91 98765 43210</a></div>
+        <div class="contact-item"><i class="fas fa-envelope"></i><a href="/cdn-cgi/l/email-protection#90e3f8e2f1f4f4f8f1d0f5e8f1fde0fcf5bef3fffd" style="color:rgba(244,225,193,.65)"><span class="__cf_email__" data-cfemail="e2918a908386868a83a2879a838f928e87cc818d8f">[email&#160;protected]</span></a></div>
+        <div class="contact-item"><i class="fas fa-clock"></i><span>Mon–Sun: 9 AM – 8 PM</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Shraddha Mehndi &amp; Nail Artist. All Rights Reserved.</span>
+      <span>Crafted with <span style="color:var(--secondary)">♥</span> for Beautiful Brides</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/919876543210" target="_blank" class="whatsapp-float" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+<button class="back-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/static/app.js"></script>
+<script>
+// Animate skill bars on scroll
+const skillObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.querySelectorAll('.skill-bar-fill').forEach(bar => {
+        bar.style.width = bar.dataset.width + '%';
+      });
+      skillObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.3 });
+document.querySelectorAll('.skill-bar-wrap').forEach(el => skillObserver.observe(el));
+</script>
+</body>
+</html>
